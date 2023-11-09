@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_add_recipe.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/recipeNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Recipe Name"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/recipeDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Recipe Description"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/ingredientsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Ingredients"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+
+        <!-- RecyclerView for Ingredients -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ingredientsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/stepsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Steps"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp" />
+
+        <Spinner
+            android:id="@+id/cuisineSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Choose Cuisine" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Recipe"
+            android:id="@+id/addRecipeButton" />
+
+    </LinearLayout>
+</ScrollView>
